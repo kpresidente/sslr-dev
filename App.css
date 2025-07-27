@@ -1,0 +1,2265 @@
+/* COLORS */
+/*firebrick, darkred, goldenrod, gainsboro, silver*/
+
+
+
+.kn-report-rendered {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.highcharts-container {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+:root {
+    --lightestGrey: #fafafa;
+    --lightGrey: #eff1f3;
+    --mediumGrey: #e5e5e5;
+    --darkGrey: #e6e6e6e6;
+    --darkestGrey: #b1b1b1;
+    --maroon: #9f0f0f;
+    --gold: #c99700;
+    --darkgold: #967100;
+}
+
+
+
+/******************************************/
+/*************              ***************/
+/*************  LOGIN PAGE  ***************/
+/*************              ***************/
+/******************************************/
+
+.kn-login {
+    display: block;
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0; /*this wont do*/
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 !important;
+    background-color: silver;
+    background-color: var(--darkestGrey);
+    overflow: scroll;
+}
+
+.kn-login > .columns {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    border: solid silver 1px;
+    box-shadow: 0 0 15px;
+    width: 35em;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    display: block;
+    background-color: white;
+    padding: 45px 75px 60px 75px;
+}
+
+.kn-login .column.is-half {
+    width: 100%;
+    padding: 0;
+}
+
+.kn-login .view-header {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.kn-login .kn-title {
+
+}
+
+.kn-login .kn-title {
+
+}
+
+.kn-login .kn-login-form {
+    max-width: unset;
+}
+
+.kn-login .login_form {
+    text-align: center;
+}
+
+.kn-login .login_form > div {
+    margin-bottom: 1.7em;
+}
+
+#email, #password {
+    border: solid silver 1px;
+    border-radius: 0;
+    height: 2.5em;
+}
+
+.kn-login .login_form > div:nth-last-of-type(2) > .control {
+    text-align: center;
+}
+.kn-login .remember {
+    display: block;
+    margin-top: 1.7em;
+}
+
+.kn-login .kn-button {
+    margin-top: 1.7em;
+}
+
+
+
+
+
+
+
+
+
+/*👉#kn-loading-spinner {
+    z-index: 5000;
+    position: fixed;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    background-color: white !important;
+    transform: unset !important;
+}👈*/
+
+#kn-loading-spinner::after {
+    /*👉background-color: var(--maroon);👈*/
+}
+
+
+
+
+
+
+/**==============================================
+*                ENTIRE APP
+*  
+*  
+*  
+*  
+*=============================================**/
+
+@media screen and (max-width: 599px) {
+    #knack-body {
+        text-size-adjust: 115%;
+        -webkit-text-size-adjust: 115%;
+        -moz-text-size-adjust: 115%;
+        -ms-text-size-adjust: 115%;
+    }
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+#knack-body {
+    height: 100%;
+    overflow: hidden;
+    visibility: visible;
+}
+
+#knack-dist_1 {
+    /*👉display: flex;
+    flex-flow: row wrap;👈*/
+    height: 100%;
+    overflow: hidden;
+}
+
+.kn-scene {
+    visibility: "hidden";
+}
+
+
+
+/******************************************/
+/*************              ***************/
+/*************  APP HEADER  ***************/
+/*************              ***************/
+/******************************************/
+
+
+#knack-logo {
+    white-space: nowrap;
+    padding: .375em 0;
+    line-height: 0;
+    flex: 0 0;
+}
+
+#knack-logo a {
+    vertical-align: top;
+    font-size: 1.4rem;
+}
+
+.kn-info-bar {
+    flex: 1 0;
+    margin-left: 50px;
+    background-color: unset;
+}
+
+.kn-info-bar .kn-info {
+    margin: 0 10px !important;
+}
+
+.kn-info.kn-container {
+    height: 100%;
+    margin: 0 25px !important;
+}
+
+.kn-info-bar,
+.kn-info-bar a {
+    color: white !important;
+}
+
+.kn-info-bar .kn-crumbtrail {
+    padding: 0;
+}
+
+/* SHRINK LOGO TO FIT SMALLER SCREENS */
+@media screen and (max-width: 400px) {
+    #knack-logo a {
+        font-size: 5.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #kn-app-header .kn-container {
+        height: 60px;
+        /*rem + pix*/
+    }
+}
+@media screen and (max-width: 1199px) {
+    #kn-app-header>.kn-container {
+        margin: 0 10px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #kn-app-header .kn-container {
+        height: 50px;
+        /*rem + pix*/
+        margin: 0 !important;
+    }
+}
+
+
+/******************************************/
+/**************  MAIN MENU  ***************/
+/******************************************/
+
+#app-menu-container {
+    background-color: var(--gold);
+
+}
+#app-menu-list {
+    flex-wrap: nowrap;
+}
+
+#app-menu-list a {
+    font-weight: normal !important;
+    font-size: 1em !important;
+}
+
+#app-menu-list>li {
+    overflow-x: hidden;
+}
+
+#app-menu-list>li>a {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+#app-menu-list .kn-dropdown-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    #app-menu-container {
+        /*👉flex: 1 1 100%;👈*/
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+
+    #app-menu-container {
+        display: inline-block;
+        width: 150px;
+        height: calc(100% - 50px);
+        vertical-align: top;
+        /*👉overflow: auto;👈*/
+        /*👉flex: 0 0 150px;👈*/
+    }
+
+    #app-menu-list {
+        flex-wrap: wrap;
+    }
+
+    #app-menu-list li {
+        width: 100%;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    #app-menu-list li a {
+        justify-content: left;
+        border-radius: 0 !important;
+    }
+
+    #app-menu-list .kn-dropdown-menu-list {
+        left: 150px;
+        margin-top: -50px !important;
+        /*rem + pix*/
+        min-width: 150px;
+    }
+
+    #app-menu-list .kn-dropdown-icon {
+        right: 15px;
+        position: absolute;
+        /*👉display: inline;👈*/
+        display: none;
+    }
+
+}
+
+
+/******************************************/
+/**********                    ************/
+/**********  SCENES CONTAINER  ************/
+/**********                    ************/
+/******************************************/
+
+
+.kn-scenes {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 154px);
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 1199px) {
+    .kn-scenes {
+        width: 100%;
+    }
+}
+
+
+
+/******************************************/
+/**************             ***************/
+/**************  ALL PAGES  ***************/
+/**************             ***************/
+/******************************************/
+
+
+.kn-scene {
+    margin: 0 10px !important;
+}
+
+/* WRAP VIEWS */
+.view-group {
+    display: flex;
+    flex-flow: row wrap !important;
+    gap: 0 20px;
+}
+
+.view-column {
+    padding: 0 !important;
+}
+
+.view-column:last-of-type {
+    flex-grow: 2;
+}
+
+@media screen and (min-width: 769px) {
+
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+
+    /* KEEP MOBILE PADDING LARGER */
+    .kn-scene.kn-container {
+        padding: unset;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+}
+
+
+
+/******************************************/
+/**************             ***************/
+/**************  ALL VIEWS  ***************/
+/**************             ***************/
+/******************************************/
+
+.kn-view {
+    margin-bottom: 2.5em;
+}
+
+/* BORDERS */
+.kn-view.kn-details,
+.kn-view.kn-table,
+.kn-view.kn-calendar,
+.kn-view.kn-list,
+.kn-view.kn-map {
+    border: solid silver 1px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--lightestGrey);
+}
+
+/* NO UNDERLINE LINKS */
+.kn-view:not(.kn-back-link) a {
+    text-decoration: none !important;
+}
+
+/* HIDE NO DATA */
+.kn-tr-nodata,
+.kn-td-nodata {
+    display: none;
+}
+
+/* SPECIAL TITLE SIZE */
+.kn-content h1 {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************************/
+/************                **************/
+/************  TABBED MENU   **************/
+/************                **************/
+/******************************************/
+
+.menu-links--tabs {
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+.menu-links--tabs .menu-links__list-item {
+    flex: 1 0 auto;
+}
+
+.menu-links--tabs .menu-links__list-item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.menu-links--tabs .menu-links__list-item a {
+    width: 100%;
+}
+
+
+
+
+/******************************************/
+/***********                  *************/
+/***********  DETAILS & LISTS *************/
+/***********                  *************/
+/******************************************/
+
+.kn-details,
+.kn-list {
+    max-width: 1000px;
+    min-width: 700px;
+    padding: 10px;
+}
+
+.kn-list-container {
+    border: solid 1px silver;
+    margin-top: 10px !important;
+    padding: 10px !important;
+}
+
+.kn-list .kn-records-nav {
+    margin: 0 0 0 1px;
+}
+
+/******************************************/
+/************  VIEW HEADERS  **************/
+/******************************************/
+
+.kn-details .view-header {
+    margin-top: 5px;
+    border: hidden;
+}
+
+.kn-details .columns,
+.kn-list .columns {
+    margin: 0 !important;
+}
+
+.kn-details section,
+.kn-list section {
+    display: flex;
+    gap: 10px;
+}
+
+.kn-details-column {
+    padding: 0 !important;
+}
+
+.kn-details-group-column {
+    padding: 0 !important;
+}
+
+.kn-detail-label {
+    margin: 0 !important;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+    .kn-details,
+    .kn-list {
+        min-width: unset;
+    }
+}
+
+/******************************************/
+/*******  STYLE LINKS AS BUTTONS  *********/
+/******************************************/
+
+.kn-details-column:last-of-type:not(.first) {
+    flex: 0 0 200px !important;
+}
+
+.kn-details-column:last-of-type:not(.first) .column {
+    padding: 0;
+}
+
+.kn-details-column:last-of-type:not(.first) .kn-detail-body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.kn-details-column:last-of-type:not(.first) a {
+    display: block;
+    width: 100%;
+    background: var(--gold);
+    color: white;
+    border-radius: 3px;
+    font-size: 1.1em;
+    margin: 0 0 .5em 0 !important;
+}
+
+.kn-details-column:last-of-type:not(.first) a:hover {
+    background-color: var(--darkgold);
+}
+
+.kn-details-column:last-of-type:not(.first) a > span {
+    display: flex;
+    padding: 7px 12px;
+}
+
+
+.kn-details-column:last-of-type:not(.first) .icon {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.kn-details-column:last-of-type:not(.first) .icon ~ span {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1;
+}
+
+.kn-details-column:last-of-type:not(.first) .icon ~ span span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+/******************************************/
+/*******  WRAP FIELDS AND BUTTONS  ********/
+/******************************************/
+
+@media screen and (max-width: 599px) {
+    .kn-details-group-column {
+        padding: 0 !important;
+    }
+
+    .kn-details .columns,
+    .kn-list .columns {
+        flex-wrap: wrap;
+    }
+
+    .kn-details-column:last-of-type:not(.kn-details-column:first-of-type),
+    .kn-details-column:last-of-type:not(.kn-details-column:first-of-type) {
+        flex-grow: 1 !important;
+    }
+
+    .kn-detail {
+        flex-wrap: wrap;
+    }
+
+    .kn-detail .kn-detail-label {
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .kn-detail .kn-detail-body {
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+
+/******************************************/
+/****************          ****************/
+/****************  TABLES  ****************/
+/****************          ****************/
+/******************************************/
+
+.kn-table {
+    table-layout: fixed;
+    flex: 0 !important;
+}
+
+/******************************************/
+/************  VIEW HEADERS  **************/
+/******************************************/
+
+.kn-table .view-header,
+.kn-list .view-header {
+    border-radius: inherit;
+    margin-bottom: 0px;
+    padding: 10px;
+    line-height: 1.2 !important;
+}
+
+.kn-list .view-header {
+    margin: -10px -10px 0 -10px;
+}
+
+.kn-table .view-header h2,
+.kn-list .view-header h2 {
+    margin-bottom: 0 !important;
+}
+
+/******************************************/
+/***********  ADD-NEW BUTTONS  ************/
+/******************************************/
+
+.header-menu {
+    flex: 0 !important;
+    align-self: end !important;
+    z-index: 1 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translate(-9px, 9px);
+}
+
+.header-menu .menu-links__list-item {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 769px) {
+    .header-menu .menu-links__list-item {
+        min-width: 12em;
+        max-width: 12em;
+    }
+    .header-menu .knMenuLink {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-inline: 12px;
+    }
+    .header-menu .knMenuLink:before,
+    .header-menu .knMenuLink:after {
+        content:"";
+        flex-grow: 1;
+    }
+    .header-menu span {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 1168px) {
+    .header-menu .knMenuLink {
+        min-width: 0;
+        font-size: 0;
+        padding-inline: 10px;
+    }
+    .header-menu .knMenuLink span {
+        font-size: initial;
+        margin: 0;
+    }
+}
+
+/******************************************/
+/*************  FILTER TABS  **************/
+/******************************************/
+
+.js-filter-menu {
+    flex-basis: 100%;
+    margin: 0 !important;
+}
+
+.js-filter-menu li {
+    flex-grow: 1;
+}
+
+.js-filter-menu li a {
+    border: solid silver 1px !important;
+    border-radius: 10px 10px 0 0 !important;
+    box-shadow: none !important;
+    margin: 0 0 -1px 0 !important;
+    background-color: white !important;
+}
+
+.js-filter-menu li.is-active a {
+    background-color: var(--gold) !important;
+}
+
+.js-filter-menu li:not(li.is-active) a:hover {
+    background-color: var(--mediumGrey) !important;
+}
+
+.js-filter-menu li:not(li.is-active) a:hover span {
+    color: var(--maroon);
+}
+
+.js-filter-menu li.is-active a span {
+    color: white !important;
+}
+
+@media screen and (max-width: 599px) {
+    .js-filter-menu li {
+        width: 100%;
+    }
+
+    .js-filter-menu li:first-child a {
+        margin-left: -1px !important;
+    }
+
+    .js-filter-menu li a {
+        border-radius: 0 !important;
+    }
+}
+
+/******************************************/
+/*********  RECORDS NAVIGATION  ***********/
+/******************************************/
+
+.kn-records-nav {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+}
+
+.kn-records-nav > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.kn-records-nav > .level {
+    border: solid silver;
+    border-width: 0;
+    margin: 0 !important;
+}
+
+.kn-records-nav > div:nth-child(3) {
+    flex-grow: 1;
+}
+
+/* REMOVE ENTRIES SUMMARY */
+.kn-entries-summary {
+    display: none;
+}
+
+/******************************************/
+/*************  SEARCH BAR  ***************/
+/******************************************/
+
+.kn-records-nav > div:nth-child(2) {
+    flex-grow: 100;
+    min-width: 250px;
+}
+
+.table-keyword-search {
+    width: 100%;
+}
+
+.table-keyword-search input {
+    width: 100% !important;
+    height: 100%;
+    min-height: 33px;
+    box-shadow: none;
+    border: solid silver;
+    border-width: 1px 1px 0 0;
+    border-radius: 0 !important;
+    margin: 0 0 0 1px !important;
+}
+
+.table-keyword-search input::placeholder {
+    font-style: italic;
+    color: silver;
+    opacity: 1;
+}
+
+.table-keyword-search .kn-button {
+    display: none;
+}
+
+@media screen and (max-width: 599px) {
+    .table-keyword-search {
+        border: none;
+    }
+}
+
+/******************************************/
+/**************  EXPORT  ******************/
+/******************************************/
+
+/* CONTAINER */
+.kn-records-nav > div:nth-child(3) > .level-left {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+
+/* EXPORT BUTTON */
+.kn-export-button {
+    flex-grow: 1;
+    margin: 0 !important;
+}
+
+.kn-export-button > .kn-button {
+    background-color: white;
+    border: solid silver;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    padding-inline: 1em;
+}
+
+/******************************************/
+/**************  FILTER  ******************/
+/******************************************/
+
+/* ADD FILTER BUTTON */
+.kn-filters-nav {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.kn-filters-nav > .kn-button {
+    border-radius: 0 !important;
+    background-color: var(--lightGrey);
+    height: 100% !important;
+    min-height: 33px;
+    width: 100% !important;
+    border: solid silver;
+    border-width: 1px 1px 0 0;
+    margin: 0 !important;
+}
+
+/* FILTERS LIST */
+.kn-filters {
+    flex-grow: 100;
+}
+
+.kn-filters ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+    min-height: 33px;
+    padding: 1px;
+    border: solid silver;
+    border-width: 1px 1px 0 0;
+    margin: 0 !important;
+}
+
+.kn-filters li {
+    margin: 2px !important;
+    border: solid silver 1px;
+    border-radius: 0 !important;
+}
+
+.kn-filters span {
+    font-weight: normal !important;
+}
+
+.kn-filters .kn-remove-filter span {
+    display: block;
+}
+
+#kn-filters-form {
+    margin-bottom: 2em !important;
+}
+
+/******************************************/
+/*************  PAGINATION  ***************/
+/******************************************/
+
+.kn-pagination {
+    flex-wrap: nowrap;
+    flex-grow: 100;
+    align-items: stretch;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+}
+
+.kn-pagination .kn-select {
+    margin: 0 !important;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.kn-pagination .kn-select select {
+    border: solid silver;
+    border-width: 1px 1px 0 0;
+    border-radius: 0px;
+    height: 100%;
+    min-height: 33px;
+    margin: 0 !important;
+}
+
+.kn-total-pages {
+    display: none;
+}
+
+.kn-pagination-arrows {
+    flex-grow: 0;
+    background-color: white;
+    border: solid silver;
+    border-width: 1px 1px 0 0;
+    margin: 0 !important;
+}
+
+.kn-change-page .icon {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.kn-change-page i {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+/******************************************/
+/***********  TABLE CONTENT  **************/
+/******************************************/
+
+/* REMOVE EXTRA BORDER ELEMENTS */
+.knTable th:first-of-type,
+.knTable tr td:first-of-type {
+    border-left: 0;
+}
+
+.knTable th:last-of-type,
+.knTable tr td:last-of-type {
+    border-right: 0;
+}
+
+.knTable tr:last-of-type td {
+    border-bottom: 0;
+}
+
+/* REMOVE UNNECESSARY SCROLL MARGIN */
+.kn-content .kn-table-wrapper {
+    margin-bottom: 0;
+}
+
+/* COLUMN HEADERS */
+.knTable th {
+    border-color: silver !important; /*#e2e2e2*/
+    font-weight: initial;
+    position: static !important;
+}
+
+.knTable th a {
+    display: flex;
+}
+
+.knTable th a span:first-of-type {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* KEEP TEXT TO ONE LINE */
+.knTable td:not(.kn-table-link) > span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 0;
+    min-width: 100%;
+}
+
+/* REPLACE LINE BREAKS WITH ARROW */
+.knTable td br {
+    display: none;
+}
+
+.knTable td .inline-break {
+    padding: 0 .5em 0 .5em;
+}
+
+.knTable td:not(.kn-table-link):hover > span {
+    white-space: initial;
+    overflow: visible;
+}
+
+.knTable td:not(.kn-table-link):hover br {
+    display: initial;
+}
+
+.knTable td:not(.kn-table-link):hover .inline-break {
+    display: none;
+}
+
+/* VIEW/EDIT/DELETE BUTTONS */
+.kn-table-link {
+    vertical-align: middle !important;
+    line-height: 1em;
+    padding: 0 !important;
+    height: 1px;
+}
+
+.kn-table-link .icon {
+    margin: 0;
+    padding: 0 !important;
+}
+
+/* GROUP HEADERS */
+.knTable .kn-table-group {
+    background-color: var(--lightGrey) !important;
+    border-color: silver;
+}
+
+.knTable .kn-table-group td {
+    font-weight: initial;
+}
+
+.knTable--rowHover tbody .kn-table-group:hover {
+    background-color: var(--lightGrey) !important;
+}
+
+/* HIDE GROUP SUBTOTALS */
+.knTable .kn-table-totals:not(:last-of-type) {
+    display: none !important;
+}
+
+/* TOTALS ROW */
+.kn-table-totals strong {
+    font-weight: 600;
+}
+
+
+
+/******************************************/
+/****************         *****************/
+/****************  FORMS  *****************/
+/****************         *****************/
+/******************************************/
+
+.kn-form .kn-form-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kn-form .kn-form-col {
+    min-width: 400px;
+    max-width: 600px !important;
+    width: 600px;
+    flex: 1 1 600px;
+}
+
+/* CONTROLS */
+.kn-form-group .control {
+    margin-bottom: 0 !important;
+}
+
+.kn-form-group .kn-input {
+    margin-bottom: 2em !important;
+}
+
+.kn-form-group .input:focus {
+    z-index: 1;
+}
+
+.kn-form-group .input:placeholder-shown,
+.chzn-container-multi .chzn-choices .search-field .default {
+    color: var(--darkestGrey);
+    font-style: italic;
+}
+
+.control.is-grouped > .control:not(:last-child) {
+    margin-right: 0 !important;
+}
+
+/* BORDERS */
+.kn-input-short_text .input /* short text */,
+.kn-textarea /* paragraph text */,
+.kn-input-phone .input /* phone */,
+.kn-input-link > .input /* link */,
+.kn-input-address .input /* address */,
+.chzn-single /* connection single */,
+.chzn-choices /* connection multiple */,
+#title, #first, #last /* name */,
+.kn-input-multiple_choice .select /* multiple choice */,
+.kn-input-email .input /* email */,
+.kn-input-number .input /* number */,
+.kn-input-boolean .checkbox /* boolean */,
+.kn-input-currency .input /* currency */,
+.kn-input-date_time .input /* date-time */
+{
+    border: solid silver 1px !important;
+    border-radius: 0 !important;
+    box-shadow: initial !important;
+    padding-inline: 0.5em !important;
+}
+
+/* ADDRESS */
+#street, #street2 {
+    border-bottom: hidden !important;
+}
+
+#city, #state {
+    border-right: hidden !important;
+}
+
+.kn-input-address .help {
+    display: none;
+}
+
+/* CONNECTION */
+.chzn-drop {
+    border: solid silver 1px !important;
+    border-radius: 0 !important;
+}
+
+.chzn-choices {
+    margin-bottom: 0 !important;
+}
+
+/* MULTIPLE CHOICE */
+.kn-input-multiple_choice .select {
+    border: solid silver 1px !important;
+    border-radius: 0 !important;
+}
+
+/* NAME */
+#title, 
+#first {
+    border-right: hidden !important;
+}
+
+#title {
+    height: 100%;
+    background-color: white;
+    padding-inline: 0.5em;
+}
+
+/* DATE/TIME */
+.kn-datetime {
+    align-items: stretch !important;
+}
+
+.kn-datetime__to {
+    border-bottom: solid silver 1px !important;
+    border-top: solid silver 1px !important;
+    padding: 0 10px;
+    background-color: var(--lightGrey);
+}
+
+.kn-datetime > div:not(.kn-datetime__to),
+.kn-datetime .kn-datetime-container,
+.kn-datetime .input {
+    flex-grow: 1;
+    margin: 0 !important;
+}
+
+.kn-datetime > div > div:last-of-type:not(div:first-of-type) .input,
+.kn-datetime > div > .input:last-of-type:not(div:first-of-type) {
+    border-left: hidden !important;
+}
+
+/* ADD NEW ITEMS */
+.kn-input-connection > .control {
+    display: flex !important;
+    align-items: stretch;
+}
+
+.kn-input-connection > .control > div:first-of-type:not(.conn_inputs) {
+    flex-grow: 1;
+    width: 0 !important;
+}
+
+.kn-input-connection > .control .kn-add-option {
+    display: flex;
+    margin: 0px;
+    width: 30px;
+    background-color: var(--lightGrey);
+    border: solid silver;
+    border-width: 1px 1px 1px 0;
+    font-size: 0;
+}
+
+.kn-input-connection > .control .kn-add-option .fa {
+    margin: 0px;
+    width: inherit;
+    color: var(--maroon);
+    font-size: 1rem;
+}
+
+/* FILE PICKER */
+.kn-input-file > .control {
+    display: flex;
+    align-items: center;
+    border: solid silver 1px !important;
+}
+
+.kn-input-file > .control > .kn-asset-current {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.kn-input-file > .control > .kn-asset-current > div:first-of-type {
+    margin-bottom: 0px !important;
+    height: 100%;
+}
+
+.kn-input-file > .control > .kn-asset-current .kn-asset-current {
+    height: 100%;
+    display: flex;
+    flex: row nowrap;
+    align-items: center;
+}
+
+.kn-input-file .kn-asset-current > .kn-view-asset {
+    flex-grow: 1;
+}
+
+.kn-input-file .kn-asset-current > .kn-file-remove {
+    display: inherit;
+    padding-right: 10px;
+}
+
+.kn-input-file input.is-file {
+    visibility: hidden;
+    width: 0px;
+}
+
+.kn-input-file .fa-folder-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    background-color: var(--lightGrey);
+    color: var(--maroon);
+    border: solid silver;
+    border-width: 0 0 0 1px;
+    cursor: pointer;
+}
+
+/* CHECKBOXES */
+.kn-input-boolean input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin-right: -4px; /* to account for border */
+}
+.kn-input-boolean > .control > label {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 5px;
+}
+.switch {
+    display: inline-block;
+    height: 100%;
+    width: 44px;
+    padding: 2px;
+    margin-right: 5px;
+    background-color: silver;
+    transition: .1s;
+    cursor: pointer;
+}
+.slider {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    width: 20px;
+    background-color: white;
+    transition: .1s;
+}
+.kn-input-boolean input[type="checkbox"]:checked ~ .switch {
+    background-color: var(--gold);
+}
+.kn-input-boolean input[type="checkbox"]:focus ~ .switch {
+    box-shadow: 0 0 1px var(--gold);
+}
+.kn-input-boolean input[type="checkbox"]:checked ~ .switch > .slider {
+    transform: translateX(20px);
+}
+
+/* MULTIPLE-CHOICE & CONNECTION RADIO BUTTONS & CHECKBOXES */
+.kn-form .kn-input-multiple_choice .kn-radio,
+.kn-form .kn-input-multiple_choice .kn-checkbox,
+.kn-form .kn-input-connection .conn_inputs {
+    display: initial;
+    width: 100%;
+    border: solid silver 1px;
+    cursor: initial;
+}
+
+.kn-form .kn-input-multiple_choice .tick-container,
+.kn-form .kn-input-connection .tick-container {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.kn-form .kn-input-multiple_choice .kn-radio .control,
+.kn-form .kn-input-multiple_choice .kn-checkbox .control,
+.kn-form .kn-input-connection .conn_inputs .control {
+    text-align: center;
+    line-height: 2;
+    border: solid silver;
+    border-width: 0 1px 1px 0;
+    cursor: pointer;
+    display: inline;
+    margin: -0.5px !important;
+}
+
+.kn-form .kn-input-multiple_choice .kn-radio .control.checked,
+.kn-form .kn-input-multiple_choice .kn-checkbox .control.checked,
+.kn-form .kn-input-connection .conn_inputs .control.checked {
+    background-color: var(--gold);
+    color: white;
+}
+
+.kn-form .kn-input-multiple_choice .kn-radio .control label,
+.kn-form .kn-input-multiple_choice .kn-checkbox .control label,
+.kn-form .kn-input-connection .conn_inputs .control label {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.kn-form .kn-input-multiple_choice .tick-container .control label,
+.kn-form .kn-input-connection .tick-container .control label {
+    height: 100%;
+    width: 100%;
+}
+
+.kn-form .kn-input-multiple_choice .kn-radio .control input,
+.kn-form .kn-input-multiple_choice .kn-checkbox .control input,
+.kn-form .kn-input-connection .conn_inputs .control input {
+    display: none;
+}
+
+/* LABELS */
+.kn-form .kn-input:not(.kn-input-divider) > .kn-label {
+    padding: 5px 9px;
+    margin: 0;
+    border: solid silver;
+    border-width: 1px 1px 0 1px;
+    background-color: var(--lightGrey);
+}
+
+.kn-form .kn-input:not(#kn-input-) .help {
+    padding: 3px 7px;
+    margin: 0;
+    font-style: oblique;
+}
+
+@media screen and (max-width: 768px) {
+/*👉    .kn-form {
+        text-size-adjust: 135%;
+        -webkit-text-size-adjust: 135%;
+        -moz-text-size-adjust: 135%;
+        -ms-text-size-adjust: 135%;
+    }👈*/
+
+    .kn-form .kn-form-col {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .kn-form-group .kn-input {
+        width: 100%;
+    }
+
+    .kn-form .chzn-container-multi .chzn-choices,
+    .kn-form .chzn-container-multi .chzn-choices .search-field input,
+    .kn-form .chzn-container-single .chzn-single,
+    .kn-form .input,
+    .kn-form .kn-textarea,
+    .kn-form .kn-select select,
+    .kn-form .filters-list select select,
+    .kn-form .kn-input-multiple_choice .kn-radio .control,
+    .kn-form .kn-input-multiple_choice .kn-radio .control input,
+    .kn-form .kn-input-file .control {
+        /*👉height: 50px;👈*/
+    }
+
+    .kn-form-group .kn-input .kn-datetime>div:nth-of-type(1) input:last-of-type:not(:only-child) {
+        border: solid silver !important;
+        border-width: 1px 0 !important;
+    }
+
+    .kn-form-group .kn-input .kn-datetime>div:nth-of-type(3) input:first-of-type:not(:only-child) {
+        border: solid silver !important;
+        border-width: 1px 0 !important;
+    }
+}
+
+
+
+/******************************************/
+/**************             ***************/
+/**************  CALENDARS  ***************/
+/**************             ***************/
+/******************************************/
+
+.knack-calendar {
+    margin: 0 -0.6px;
+}
+
+/* CALENDAR HEADER */
+.kn-calendar .view-header {
+    display: flex;
+    align-items: center;
+    height: calc(2em + 20px);
+    border-bottom: hidden !important;
+    border-radius: inherit;
+    margin-bottom: 0px;
+    padding: 0 10px;
+}
+
+.kn-calendar .view-header h2 {
+    flex-grow: 1;
+    white-space: nowrap;
+    margin-bottom: 0 !important;
+    line-height: 2;
+    vertical-align: middle;
+}
+
+.kn-calendar .fc-header {
+    background-color: var(--lightGrey);
+    border-collapse: separate !important;
+    padding: 0 0.4em;
+    border: solid silver;
+    border-width: 0 1px;
+}
+
+.kn-calendar .fc-header .fc-button {
+    margin-bottom: 0;
+    border: solid silver 1px;
+    border-radius: 0;
+}
+
+.kn-calendar .fc-header td {
+    vertical-align: middle;
+}
+
+.kn-calendar .fc-header .fc-header-title h2 {
+    margin: 0.4em;
+}
+
+/* MONTH VIEW */
+.fc-view-month tbody {
+    cursor: crosshair;
+}
+
+/* MONTH VIEW WEEKS */
+.fc-view-month table {
+    border-collapse: collapse;
+}
+
+.fc-view-month th {
+    background: gainsboro;
+    border: solid silver 1px;
+    font-weight: normal;
+}
+
+.fc-view-month tr {
+    background-color: white;
+}
+
+/* MONTH VIEW EVENTS */
+.fc-view-month .fc-event {
+    margin: 0px 0px 0px 2px;
+    cursor: pointer;
+    border-width: 0px !important;
+}
+
+.fc-view-month .fc-event .fc-event-inner {
+    color: black;
+    overflow: hidden;
+    padding: 2px 3px;
+    white-space: nowrap;
+}
+
+.fc-view-month .fc-event-time {
+    text-transform: uppercase !important;
+    padding: 0px 7px 0px 0px;
+    width: 1px;
+    /* prevents title wrapping to next line */
+}
+
+/* MONTH VIEW EVENTS HOVER */
+.fc-view-month {
+    overflow: visible !important;
+}
+
+.fc-view-month .fc-event:hover {
+    overflow: visible;
+    z-index: 1000 !important;
+}
+
+.fc-view-month .fc-event-inner:hover {
+    display: inline-table;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.65)
+}
+
+/* MONTH VIEW EVENT RESIZER */
+.fc-view-month .fc-event .ui-resizable-handle {
+    width: 10px !important;
+    right: 0px !important;
+}
+
+.fc-view-month .fc-event .ui-resizable-handle:hover {
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .kn-calendar .fc-header {
+        padding: .4em;
+    }
+
+    .kn-calendar .fc-header tr {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin: 0;
+    }
+
+    .kn-calendar .fc-header-left {
+        width: unset;
+    }
+
+    .kn-calendar .fc-header-left .fc-header-space {
+        padding-left: 0 !important;
+    }
+
+    .kn-calendar .fc-header-center {
+        order: -1;
+        flex-grow: 1;
+    }
+
+    .kn-calendar .fc-header-center h2 {
+        margin: 0;
+    }
+
+    .kn-calendar .fc-header-title {
+        font-size: 0.8em;
+    }
+
+    .kn-calendar .fc-header-right {
+        display: none;
+    }
+
+    .kn-calendar .fc-view {
+        text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+
+    .kn-calendar .fc-event {
+        font-size: 1em !important;
+    }
+}
+
+
+
+/******************************************/
+/****************         *****************/
+/****************  MENUS  *****************/
+/****************         *****************/
+/******************************************/
+
+.kn-menu .control.has-addons .kn-button {
+    flex-grow: 1;
+    border-radius: 0px;
+}
+
+
+
+/******************************************/
+/****************          ****************/
+/****************  MODALS  ****************/
+/****************          ****************/
+/******************************************/
+
+.kn-modal {
+    min-width: fit-content !important;
+    max-width: 100% !important;
+    width: fit-content !important;
+}
+
+.kn-modal .modal-card-head {
+    border-radius: 0 !important;
+}
+
+.kn-modal .modal-card-head h1 {
+    max-width: unset;
+}
+
+/* REMOVE EXTRA MARGINS */
+#knack-body .kn-modal .kn-container {
+    margin: 0;
+}
+
+/* TOO MUCH SPACING AT THE BOTTOM OF THE MODAL*/
+.modal-card-body {
+    margin-bottom: 0;
+}
+
+/* SUBMIT BUTTON */
+.kn-modal .kn-submit {
+    display: flex;
+    justify-content: center;
+    /*👉margin-top: 2em;👈*/
+}
+
+.kn-modal .kn-submit .kn-button {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .kn-modal {
+        /*margin: 2px;
+    max-width: calc(100% - 2px);
+    min-width: calc(100% - 2px);*/
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .kn-modal .kn-scene {
+        margin: 10px 5px 0 5px !important;
+    }
+
+    .modal-card-head {
+        padding: 20px 15px;
+    }
+
+    h1.modal-card-title {
+        max-width: unset;
+        padding-left: unset;
+    }
+}
+
+
+
+/******************************************/
+/**********                     ***********/
+/**********  DOCUMENT PREVIEWS  ***********/
+/**********                     ***********/
+/******************************************/
+
+#preview-container {
+    overflow: hidden;
+    padding-top: 136%; /* 136% = 8.5:11 aspect ratio + toolbar */
+    position: relative;
+    margin-bottom: 25px;
+    background-color: var(--lightGrey);
+    height: 75vh;
+    width: 58vh;
+}
+
+#preview,
+#loading-preview {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--lightGrey);
+}
+
+#loading-preview {
+    padding-top: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .kn-dropdown-icon {
+        display: none !important;
+    }
+}
+
+
+
+/******************************************/
+/*****************        *****************/
+/*****************  MAPS  *****************/
+/*****************        *****************/
+/******************************************/
+
+.kn-map {
+    width: 100% !important;
+}
+
+.kn-map .view-header {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.kn-map .view-header h2 {
+    flex-grow: 1;
+    white-space: nowrap;
+    margin-bottom: 0 !important;
+    line-height: 2;
+    vertical-align: middle;
+}
+
+.kn-map form {
+    display: none;
+}
+
+.kn-map .kn-map-results {
+    flex-direction: row !important;
+    margin: 0;
+}
+
+.kn-map .kn-google-map {
+    flex-grow: 0;
+    margin-bottom: 0 !important;
+    border-top: solid silver 1px;
+}
+
+.kn-map .kn-map-list {
+    padding: 0 !important;
+    flex-grow: 1;
+    border-top: solid silver 1px;
+}
+
+.kn-map .kn-map-list .kn-list-container {
+    margin: 0 !important;
+    border-top: hidden;
+    background-color: white;
+}
+
+.kn-map .kn-map-list .kn-list-container.active,
+.kn-map .kn-map-list .kn-list-container:hover {
+    background-color: var(--lightestGrey);
+}
+
+.kn-map .kn-map-list .columns {
+    margin: 0 !important;
+}
+
+.kn-map .kn-map-list .kn-details-group {
+    margin: 0 !important;
+}
+
+.kn-map .kn-map-list .kn-details-group.column-2 {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.kn-map .kn-map-list .kn-details-group.column-2>.column {
+    flex-grow: 0 !important;
+    min-width: unset !important;
+}
+
+.kn-map .kn-map-list .kn-details-group.column-2 .kn-details-link a {
+    display: block;
+    background: gainsboro;
+    border: 1px solid silver;
+    line-height: 1.6rem;
+    text-decoration: none;
+}
+
+.kn-map .kn-map-list .kn-details-group.column-2 .kn-details-link a:hover {
+    background-color: silver;
+}
+
+.kn-map .kn-map-list .kn-details-group.column-2 .kn-details-link .icon {
+    display: inline-block;
+    line-height: 1.6rem;
+    margin: 0;
+    width: 3rem;
+}
+
+.kn-map .kn-map-list .kn-details-group.column-2 .kn-details-link .icon~span {
+    display: none;
+}
+
+.kn-map .kn-map-list .kn-geo-distance {
+    /*position: static !important;
+float: right;*/
+    margin-right: 10px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.kn-map .kn-map-list .kn-list-container.active .kn-geo-distance,
+.kn-map .kn-map-list .kn-list-container:hover .kn-geo-distance {
+    background-color: var(--lightestGrey);
+}
+
+
+/******************************************/
+/************                **************/
+/************  TODAY SCREEN  **************/
+/************                **************/
+/******************************************/
+
+/* NOTE: THESE NEED JAVASCRIPT: can't be accessed from .kn-scene
+@media screen and (orientation:landscape){
+body {
+    transform: rotate(90deg);
+}
+}
+.toast {
+position: fixed;
+bottom: 110px;
+width: calc(100% - 20px);
+}*/
+
+#kn-scene_1412 {
+    margin-bottom: 105px !important;
+}
+
+#kn-scene_1412 .view-header,
+#kn-scene_1412 section.columns .kn-details-group:first-of-type {
+    text-align: center;
+}
+
+#kn-scene_1412 .kn-details-column {
+    flex-grow: 1 !important;
+}
+
+#kn-scene_1412 .kn-special-title {
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+}
+
+#kn-scene_1412 .kn-view {
+    margin-bottom: 10px;
+}
+
+#kn-scene_1412 .kn-details-group.column-2 {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+}
+
+#kn-scene_1412 .kn-details-group.column-2 .kn-details-group-column {
+    max-width: calc(50% - 5px);
+    min-width: 0px;
+}
+
+#kn-scene_1412 .kn-details-group.column-2 .kn-detail div {
+    min-width: 0px !important;
+    max-width: unset !important;
+    padding: 5px;
+}
+
+#kn-scene_1412 .kn-details-group.column-2 .kn-detail .kn-detail-label {
+    width: 50%;
+}
+
+/******************************************/
+/***************  BUTTONS  ****************/
+/******************************************/
+
+#view_2774 .kn-details-group:last-of-type,
+#view_2790 .kn-submit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: unset;
+    line-height: 50px;
+    margin: 0;
+    padding: 10px 10px 40px 10px;
+    border-top: solid silver 1px;
+    background-color: white;
+    font-size: medium;
+}
+
+#view_2774 .kn-details-group:last-of-type a {
+    display: block;
+    width: 100%;
+    border: solid silver 1px;
+}
+
+#view_2790 button {
+    background-color: green !important;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #view_2774 .kn-details-group:last-of-type,
+    #view_2790 .kn-submit {
+        left: 150px;
+    }
+}
+
+/******************************************/
+/**************  INSTALLER  ***************/
+/******************************************/
+
+#view_2774 .kn-details-group:last-of-type .kn-label-left {
+    display: table;
+    text-align: center;
+}
+
+#view_2774 .kn-details-group:last-of-type .kn-details-link {
+    display: table-cell;
+}
+
+#view_2774 .kn-details-group:last-of-type .kn-detail-body {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+#view_2774 .kn-details-group:last-of-type .kn-details-link a {
+    min-width: 45vw;
+    line-height: 50px;
+}
+
+#view_2774 .kn-details-group:last-of-type .kn-details-link:first-of-type a {
+    background-color: green;
+    color: white;
+}
+
+#view_2774 .kn-details-group:last-of-type .kn-details-link:first-of-type a[data-action-rule-index="4"],
+#view_2774 .kn-details-group:last-of-type .kn-details-link:last-of-type a {
+    background-color: var(--maroon);
+    color: white;
+}
+
+#view_2774 .kn-details-group:last-of-type .kn-details-link:last-of-type a[data-action-rule-index="1"] {
+    background-color: var(--gold);
+    color: white;
+}
+
+@media screen and (min-width: 1200px) {
+    #view_2774 .kn-details-group:last-of-type .kn-details-link a {
+        min-width: calc((100vw - 150px) * .45);
+    }
+}
+
+/******************************************/
+/**************  TIMESHEET  ***************/
+/******************************************/
+
+#view_2782 .kn-details-group:last-of-type .kn-detail-body {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+#view_2782 .kn-details-group:last-of-type a {
+    display: block;
+    border: solid silver 1px;
+    background-color: var(--gold);
+    color: white;
+    line-height: 2rem;
+}
+
+
+
+
+/******************************************/
+/***************  TIMECARD  ***************/
+/******************************************/
+
+/******************************************/
+/************  PROJECT SELECT  ************/
+/******************************************/
+
+#view_2790 {
+    margin-top: -10px;
+}
+
+#view_2790 ul {
+    margin: 0 -10px 0 -10px;
+}
+
+#view_2790 li {
+    padding: 0 10px;
+}
+
+#view_2790 .kn-radio .control {
+    font-size: 0;
+}
+
+#view_2790 .kn-radio span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    border-top: solid silver 1px;
+    font-size: medium;
+    line-height: 2.5em;
+    padding: 0 15px 0 15px;
+}
+
+#kn-input-field_2639,
+#kn-input-field_2639 .control {
+    margin-bottom: 0 !important;
+}
+
+#view_2790 .kn-radio .control:last-of-type span {
+    border-bottom: solid silver 1px;
+}
+
+#view_2790 input[type="radio"] {
+    display: none;
+}
+
+#view_2790 input[type="radio"]:checked+span {
+    background-color: var(--gold);
+    color: white;
+}
+
+#view_2790 .kn-input>label {
+    background-color: silver;
+    padding: 10px 10px 10px 15px;
+    margin: 0;
+}
+
+#view_2790 .column {
+    padding: 0;
+}
+
+#view_2790 input[value=""]+span {
+    visibility: hidden;
+}
+
+#view_2790 input[value=""]+span::before {
+    content: "None";
+    visibility: initial;
+    font-style: oblique;
+}
+
+#view_2790 .kn-back-link {
+    display: none;
+}
+
+#connection-picker-radio-field_2398 {
+    width: 100%;
+}
+
+
+/******************************************/
+/***************  SCHEDULE  ***************/
+/******************************************/
+
+/* HIDE BACK LINK */
+#kn-scene_1432>.kn-back-link,
+#kn-scene_1433>.kn-back-link {
+    display: none;
+}
+
+.field_2669 {
+    /*
+font-family: Arial Narrow,Arial,sans-serif;
+font-weight: bold;
+font-family:'Tahoma', sans-serif;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family:Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+*/
+    font-size: 12px;
+}
+
+/* TENTATIVE TAG*/
+#kn-scene_1432 .field_2423,
+#kn-scene_1433 .field_2423 {
+    color: var(--darkgold);
+    margin-top: -1.2rem;
+    /*
+text-align: right;
+position: absolute;
+top: 10px;
+right: 5px;
+*/
+}
+
+/* PUT INSTALLERS ON ONE LINE */
+#kn-scene_1432 .field_2558 br,
+#kn-scene_1433 .field_2558 br {
+    content: ", ";
+}
+
+#kn-scene_1432 .field_2558 br::after,
+#kn-scene_1433 .field_2558 br::after {
+    content: ", ";
+}
+
+/* HIDE INSTALLERS FIELD ON TIME-OFF EVENT */
+#kn-scene_1432 .field_2678~.field_2558,
+#kn-scene_1433 .field_2678~.field_2558 {
+    display: none;
+}
+
+/* EDIT BUTTON */
+#kn-scene_1432 .kn-list-content .kn-details-column:last-child,
+#kn-scene_1433 .kn-list-content .kn-details-column:last-child {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#kn-scene_1432 .kn-list-content .kn-details-column:last-child .kn-detail-body,
+#kn-scene_1433 .kn-list-content .kn-details-column:last-child .kn-detail-body {
+    min-width: unset;
+    padding: 0;
+}
+
+#kn-scene_1432 .kn-list-content .kn-details-column:last-child .icon,
+#kn-scene_1433 .kn-list-content .kn-details-column:last-child .icon {
+    width: unset;
+    padding: 0.4rem 0.6rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+#kn-scene_1432 .kn-list-content .kn-details-column:last-child .icon~span,
+#kn-scene_1433 .kn-list-content .kn-details-column:last-child .icon~span {
+    display: none;
+}
+
+/* FORMS */
+#kn-scene_1435 .kn-form,
+#kn-scene_1436 .kn-form,
+#kn-scene_1437 .kn-form,
+#kn-scene_1438 .kn-form {
+    border: solid silver 1px;
+    padding: 10px;
+}
+
+#kn-scene_1435 .kn-submit .kn-button,
+#kn-scene_1436 .kn-submit .kn-button,
+#kn-scene_1437 .kn-submit .kn-button,
+#kn-scene_1438 .kn-submit .kn-button {
+    width: 100%;
+}
+
+#kn-scene_1437 #kn-input-field_2685 label.checkbox,
+#kn-scene_1438 #kn-input-field_2685 label.checkbox {
+    display: block;
+    width: 100%;
+}
+
+#kn-scene_1437 #kn-input-field_2685 input[type="checkbox"]::before,
+#kn-scene_1438 #kn-input-field_2685 input[type="checkbox"]::before {
+    /*  content: "";
+border: solid silver 1px;
+height: 1em;
+width: 1em;*/
+}
+
+#kn-scene_1437 #kn-input-field_2685 input[type="checkbox"]::after,
+#kn-scene_1438 #kn-input-field_2685 input[type="checkbox"]::after {
+    visibility: initial;
+    content: "";
+    border: solid silver 1px;
+    background-color: rgba(0, 0, 0, .08);
+    width: 100%;
+    position: absolute;
+    display: block;
+    height: 2em;
+    margin-top: -0.5em;
+}
+
+#kn-scene_1437 #kn-input-field_2685 input[type="checkbox"],
+#kn-scene_1438 #kn-input-field_2685 input[type="checkbox"] {
+    /*display: none;*/
+    visibility: hidden;
+}
+
+
+
+
+
+/******************************************/
+/****************         *****************/
+/****************  SPECIFIC ITEMS  *****************/
+/****************         *****************/
+/******************************************/
+
+/* ADD_SCHEDULE FORM - HIDE ALL-DAY & REPEAT */
+#kn-input-field_2257 > div:last-of-type {
+    display: none;
+}
+
+/* BID_CALENDAR - BIDDERS */
+#view_2995 {
+    border: solid silver 1px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--lightestGrey);
+}
+#view_2995 .view-header{
+    margin-left: 5px;
+}
+#view_2995 .kn-submit {
+    margin: -0.5em 0 1.5em 0;
+}
+#view_3003 {
+    max-width: 605px;
+    min-width: 605px;
+}
+#view_3003 .kn-details-column:last-of-type {
+    flex: 0 0 115px !important;
+}
